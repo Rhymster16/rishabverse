@@ -1,0 +1,44 @@
+# Node
+node_modules/
+.next/
+out/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# IntelliJ
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# Coverage
+coverage/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Java
+target/
+*.class
+
+# Docker
+docker-data/
+
+# Misc
+*.tmp
