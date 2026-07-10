@@ -42,3 +42,7 @@ docker-data/
 
 # Misc
 *.tmp
+
+# Windows
+desktop.ini
+Desktop.ini
