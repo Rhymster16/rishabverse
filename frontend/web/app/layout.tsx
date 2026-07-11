@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
+import { metadata } from "@/config/metadata";
 import { Geist, Geist_Mono } from "next/font/google";
-import { siteConfig } from "@/config/site"; // 1. Added this import
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,11 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// 2. Updated metadata to use siteConfig values
-export const metadata: Metadata = {
-  title: siteConfig.title,
-  description: siteConfig.description,
-};
+export { metadata };
 
 export default function RootLayout({
   children,
