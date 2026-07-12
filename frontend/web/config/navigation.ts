@@ -33,4 +33,4 @@ export const navigation = [
     title: "Contact",
     href: "/contact",
   },
-];
+] as const;
