@@ -1,20 +1,27 @@
+interface BootTerminalProps {
+  visibleLines: number;
+}
+
 const bootLines = [
-  "Initializing Digital Consciousness...",
+  "Initializing RishabVerse OS...",
   "",
+  "Loading Memories.................OK",
   "Loading Curiosity...............OK",
-  "Loading Knowledge...............OK",
-  "Loading Lessons................OK",
   "Loading Engineering............OK",
-  "Loading Creativity.............OK",
-  "Loading Humanity...............OK",
+  "Loading Leadership..............OK",
+  "Loading Creativity..............OK",
+  "Loading Research................OK",
+  "Loading Humanity................OK",
   "",
-  "Connecting..."
+  "Establishing Human Connection..."
 ];
 
-export default function BootTerminal() {
+export default function BootTerminal({
+  visibleLines,
+}: BootTerminalProps) {
   return (
     <div className="font-mono text-green-400 text-lg space-y-2">
-      {bootLines.map((line, index) => (
+      {bootLines.slice(0, visibleLines).map((line, index) => (
         <p key={index}>{line}</p>
       ))}
     </div>
