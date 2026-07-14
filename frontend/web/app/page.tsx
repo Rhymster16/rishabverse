@@ -1,5 +1,5 @@
-import Hero from "@/components/hero/Hero";
+import BootSequence from "@/components/boot/BootSequence";
 
 export default function Home() {
-  return <Hero />;
+  return <BootSequence />;
 }
