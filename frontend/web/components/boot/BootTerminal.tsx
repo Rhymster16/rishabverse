@@ -13,7 +13,7 @@ const bootLines = [
   "Loading Research................OK",
   "Loading Humanity................OK",
   "",
-  "Establishing Human Connection..."
+  "✓ Digital Presence Ready",
 ];
 
 export default function BootTerminal({
